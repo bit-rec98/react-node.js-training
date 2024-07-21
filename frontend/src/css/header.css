@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 1176px) and (max-width: 1440px) {
+    #navbar {
+        /* padding: 1rem; */
+        /* border: 1px solid var(--fucsia); */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        flex-grow: 1;
+    }
+
+    #navbar ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+
+    #store-id img{
+        width: 12rem;
+        height: 8rem;
+    } 
+}
+
+/* Tablet */
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
+    
+}
+
+/* Mobile */
+@media only screen and (max-width: 576px){
+
+}

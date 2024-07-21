@@ -1,0 +1,20 @@
+/* Call to action section */
+#home-cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-grow: 1;
+    padding-top: 2rem;
+    /* height: 100vh; */
+}
+
+#home-cta h1 {
+    font-size: var(--h1TitleSize);
+    color: var(--white);
+}
+
+#home-cta p {
+    color: var(--white);
+}

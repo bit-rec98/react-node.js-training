@@ -1,0 +1,17 @@
+/* Desktop */
+@media only screen and (min-width: 1176px) and (max-width: 1440px) {
+    #home-categories{
+        background-color: var(--black);
+        padding: 6rem;
+    }
+    #home-categories h2 {
+        font-size: var(--h2TitleSize);
+        color: var(--white);
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 576px) and (max-width: 1024px) {}
+
+/* Mobile */
+@media only screen and (max-width: 576px) {}

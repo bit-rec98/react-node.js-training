@@ -1,0 +1,17 @@
+#footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid var(--fucsia); */
+    padding: 2rem;
+}
+
+#footer nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    gap: 1rem;
+}

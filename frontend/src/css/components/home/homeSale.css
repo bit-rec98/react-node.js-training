@@ -1,0 +1,57 @@
+@media only screen and (min-width: 1176px) and (max-width: 1440px) {
+    #home-sale {
+        background: linear-gradient(120deg, #D2D2D2, #121212);;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    #laptop-img{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 16rem;
+        z-index: 10;
+    }
+
+    #tablet1-img{
+        display: inline-block;
+        position: absolute;
+        top: 2rem;
+        left: 4rem;
+        z-index: 15;
+    }
+
+    #tablet2-img{
+        display: inline-block;
+        position: absolute;
+        top: 18rem;
+        left: 0rem;
+        z-index: 10;
+    }
+
+    #phone-img{
+        display: inline-block;
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        z-index: 15;
+    }
+
+    #watch-img{
+        display: inline-block;
+        position: absolute;
+        bottom: 0rem;
+        right: 0rem;
+        z-index: 15;
+    }
+
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1024px) {}
+
+@media only screen and (max-width: 576px) {}

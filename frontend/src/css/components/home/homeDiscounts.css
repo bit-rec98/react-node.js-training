@@ -1,0 +1,15 @@
+@media only screen and (min-width: 1176px) and (max-width: 1440px) {
+    #home-discounts {
+        padding: 6rem;
+        background-color: var(--white);
+    }
+
+    h2{
+        font-size: var(--h2TitleSize);
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1024px) {}
+
+@media only screen and (max-width: 576px) {}

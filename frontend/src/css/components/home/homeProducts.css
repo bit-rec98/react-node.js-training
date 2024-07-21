@@ -1,0 +1,17 @@
+
+/* Desktop */
+@media only screen and (min-width: 1176px) and (max-width: 1440px) {
+    #home-products {
+        background-color: var(--white);
+        padding: 6rem
+    }
+    
+}
+
+/* Tablet */
+@media only screen and (min-width: 576px) and (max-width: 1024px) {}
+
+/* Mobile */
+@media only screen and (max-width: 576px) {}
+
+

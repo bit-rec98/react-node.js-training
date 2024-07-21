@@ -1,0 +1,10 @@
+/* Grid section */
+#home-grid {
+    background-color: var(--white);
+}
+
+/* Categories */
+#home-categories {
+    background-color: var(--black);
+    padding: 4rem;
+}
