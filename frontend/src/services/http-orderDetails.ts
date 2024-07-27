@@ -1,11 +1,16 @@
-import axios from "axios";
+// GET
+export const getAllOrderDetails = () => {
+  fetch("http://localhost:3000/api/order-detail/")
+    .then((response) => response.json())
+    .then((data) => console.log(`Data: ${data}`))
+    .catch((error) => console.error(`Error at request: ${error}`));
+}
 
-export const getAllProducts = async () => {
-  try {
-    const response = axios.get("http://localhost:3000/api/order-details/");
-    const orderDetails = (await response).data;
-    console.log(orderDetails);
-  } catch (error) {
-    throw new Error(`There was an error with the request: ${error}`);
-  }
-};
+
+// POST
+
+
+// PUT
+
+
+// DELETE

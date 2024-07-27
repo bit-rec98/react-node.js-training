@@ -5,8 +5,8 @@ const ordersRoutes = Router();
 
 ordersRoutes.get("/orders", getAllOrders);
 ordersRoutes.get("/orders/:id", getOrderById);
-ordersRoutes.get("/orders", createOrder);
-ordersRoutes.get("/orders/:id", updateOrder);
-ordersRoutes.get("/orders/:id", deleteOrder);
+ordersRoutes.post("/orders", createOrder);
+ordersRoutes.put("/orders/:id", updateOrder);
+ordersRoutes.delete("/orders/:id", deleteOrder);
 
 export default ordersRoutes;

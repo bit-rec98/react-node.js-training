@@ -1,8 +1,17 @@
-import React from 'react'
+import { useEffect } from "react";
+import { getAllProducts } from "../services/http-products";
 
 const Products = () => {
+  useEffect(() => {
+    console.log(getAllProducts())
+
+  }, []);
+
+
+
+
   return (
-    <div>Products</div>
+    <section>Products</section>
   )
 }
 

@@ -9,14 +9,11 @@ import Products from "./pages/Products";
 import Dashboard from "./pages/Dashboard";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
-import { getAllProducts } from "./services/http-products";
-import { useEffect } from "react";
+import NotFound from "./pages/NotFound";
+
+
 
 function App() {
-
-  useEffect(() => {
-    getAllProducts();
-  }, []);
 
   return (
     <BrowserRouter>
@@ -28,6 +25,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/about" element={<About />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/*" element={<NotFound/>}></Route>
         </Routes>
       </main>
       <Footer></Footer>

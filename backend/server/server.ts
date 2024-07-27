@@ -5,6 +5,7 @@ import orderDetailRoutes from "../routes/orderDetailsRoutes";
 import ordersRoutes from "../routes/ordersRoutes";
 import productsRoutes from "../routes/productsRoutes";
 import usersRoutes from "../routes/usersRoutes";
+import errorHandler from "../middlewares/errorHandler";
 require('dotenv').config()
 
 export class Server {
@@ -13,9 +14,10 @@ export class Server {
   //* Execution at constructor
   constructor() {
     this.app = express();
-    this.middlewares();
+    this.cors()
     this.dbConnect();
     this.routes();
+    this.middlewares();
   }
 
   //* Declare methods to execute routes, dbConnection and middlewares
@@ -24,10 +26,13 @@ export class Server {
   }
 
   private middlewares(): void {
-    this.app.use(cors());
     this.app.use(express.json());
-    // this.app.use(errorHandler);
+    this.app.use(errorHandler);
     // this.app.use(validations);
+  }
+
+  private cors():void{
+    this.app.use(cors())
   }
 
   private routes(): void {

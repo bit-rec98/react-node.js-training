@@ -1,5 +1,5 @@
 import { Model, Schema, model } from "mongoose";
-import { IProduct } from "../interfaces/products";
+import { IProduct } from "../interfaces/product";
 
 // Schema structuring
 const ProductSchema = new Schema<IProduct>({
@@ -20,6 +20,11 @@ const ProductSchema = new Schema<IProduct>({
     type: Number,
     required: true,
     trim: true,
+  },
+  image: {
+    type: String,
+    required: true,
+    trim: true
   },
   brand: {
     type: String,

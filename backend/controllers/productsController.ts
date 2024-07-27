@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import ProductModel from "../models/products";
-import { IProduct } from "../interfaces/products";
+import ProductModel from "../models/product";
+import { IProduct } from "../interfaces/product";
 
 // GET
 export const getAllProducts = async ({}, res: Response) => {
@@ -23,8 +23,7 @@ export const getProductById = async (req: Request, res: Response) => {
   const product: IProduct | null = await ProductModel.findById(id);
 
   if (!product) {
-    res.status(404)
-    .json({ log: "Product not found" });
+    res.status(404).json({ log: "Product not found" });
     return;
   }
 
