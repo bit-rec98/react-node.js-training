@@ -12,6 +12,7 @@ const errorHandler = (
       message: err.message || "Internal Server Error",
     },
   });
+  next();
 };
 
 export default errorHandler;
